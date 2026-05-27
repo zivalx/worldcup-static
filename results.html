@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="canonical-base" content="https://worldcup.zivalx.com">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Cup 2026 · Results</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9917;</text></svg>">
+  <link rel="stylesheet" href="/static/dashboard.css">
+  <script src="https://unpkg.com/htmx.org@1.9.12" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-inner">
+      <a href="/" class="nav-brand">
+        <span class="brand-mark">WC</span>World Cup 2026
+      </a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/results.html">Results</a></li>
+        <li><a href="/tournament.html">Tournament</a></li>
+        <li><a href="/golden-boot.html">Golden Boot</a></li>
+        <li><a href="/bets.html">Bets</a></li>
+      </ul>
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle light/dark theme" title="Toggle theme">
+        <span class="theme-icon-light">&#9728;&#65039;</span>
+        <span class="theme-icon-dark">&#9790;</span>
+      </button>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    
+
+<div class="section-header" style="margin-top: 1.5rem; margin-bottom: 1.25rem;">
+  <h2 class="section-title">Results</h2>
+</div>
+
+
+<div class="empty-state">
+  <div class="empty-state-icon">&#9203;</div>
+  <p>
+    No completed matches yet
+    
+      &mdash; group stage starts June 11, 2026
+    
+  </p>
+</div>
+
+
+
+  </main>
+
+  <footer class="site-footer">
+    <span>World Cup 2026 forecast feed</span>
+    
+  </footer>
+
+  <script>
+    (function() {
+      var saved = localStorage.getItem('wc-theme');
+      if (saved) document.documentElement.setAttribute('data-theme', saved);
+    })();
+    function toggleTheme() {
+      var current = document.documentElement.getAttribute('data-theme');
+      var next = current === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('wc-theme', next);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="canonical-base" content="https://worldcup.zivalx.com">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Cup 2026 · Home</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9917;</text></svg>">
+  <link rel="stylesheet" href="/static/dashboard.css">
+  <script src="https://unpkg.com/htmx.org@1.9.12" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-inner">
+      <a href="/" class="nav-brand">
+        <span class="brand-mark">WC</span>World Cup 2026
+      </a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/results.html">Results</a></li>
+        <li><a href="/tournament.html">Tournament</a></li>
+        <li><a href="/golden-boot.html">Golden Boot</a></li>
+        <li><a href="/bets.html">Bets</a></li>
+      </ul>
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle light/dark theme" title="Toggle theme">
+        <span class="theme-icon-light">&#9728;&#65039;</span>
+        <span class="theme-icon-dark">&#9790;</span>
+      </button>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    
+
+
+<div class="hero">
+  <div class="hero-eyebrow">Live Forecast Dashboard</div>
+  <h1 class="hero-title">FIFA World Cup 2026</h1>
+  <p class="hero-tagline">This Summer - Shir beats her brothers</p>
+  <div class="hero-subtitle">
+    
+      <span>T−14 days · pre-tournament</span>
+      <span class="sep">·</span>
+    
+    
+      <span class="timestamp">Snapshot &middot; 2026-05-27 08:21 UTC</span>
+    
+  </div>
+
+  <div id="refresh-area">
+    <div class="refresh-wrap">
+  <button
+    class="btn-refresh"
+    hx-post="/refresh"
+    hx-target="#refresh-area"
+    hx-swap="innerHTML"
+    hx-indicator="#refresh-spinner">
+    <span class="spinner"></span>
+    <span class="btn-label">Refresh now</span>
+  </button>
+  <span id="refresh-spinner" class="htmx-indicator timestamp">refreshing&hellip;</span>
+</div>
+  </div>
+</div>
+
+
+<section style="margin-bottom: 2.5rem;">
+  <div class="section-header">
+    <h2 class="section-title">Top contenders</h2>
+    <a href="/tournament.html" class="section-link">see all →</a>
+  </div>
+
+  
+  <div class="contender-list">
+    
+      
+
+
+<div class="contender-card">
+  <span class="rank-chip top-3">1</span>
+
+  <span class="contender-name">Argentina</span>
+
+  <span class="contender-prob">19.8%</span>
+
+  <div class="contender-bar-wrap">
+    
+      
+<div class="prob-bar" role="progressbar" aria-valuenow="19" aria-valuemin="0" aria-valuemax="100">
+  <div class="prob-bar-fill " style="width: 19.75%"></div>
+</div>
+    
+  </div>
+
+  
+    
+
+  
+    <span class="edge-chip neutral">+0.0pp</span>
+  
+
+  
+</div>
+    
+      
+
+
+<div class="contender-card">
+  <span class="rank-chip top-3">2</span>
+
+  <span class="contender-name">France</span>
+
+  <span class="contender-prob">13.9%</span>
+
+  <div class="contender-bar-wrap">
+    
+      
+<div class="prob-bar" role="progressbar" aria-valuenow="13" aria-valuemin="0" aria-valuemax="100">
+  <div class="prob-bar-fill " style="width: 13.850000000000001%"></div>
+</div>
+    
+  </div>
+
+  
+    
+
+  
+    <span class="edge-chip neutral">+0.0pp</span>
+  
+
+  
+</div>
+    
+      
+
+
+<div class="contender-card">
+  <span class="rank-chip top-3">3</span>
+
+  <span class="contender-name">England</span>
+
+  <span class="contender-prob">11.2%</span>
+
+  <div class="contender-bar-wrap">
+    
+      
+<div class="prob-bar" role="progressbar" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100">
+  <div class="prob-bar-fill " style="width: 11.15%"></div>
+</div>
+    
+  </div>
+
+  
+    
+
+  
+    <span class="edge-chip neutral">+0.0pp</span>
+  
+
+  
+</div>
+    
+      
+
+
+<div class="contender-card">
+  <span class="rank-chip ">4</span>
+
+  <span class="contender-name">Spain</span>
+
+  <span class="contender-prob">9.6%</span>
+
+  <div class="contender-bar-wrap">
+    
+      
+<div class="prob-bar" role="progressbar" aria-valuenow="9" aria-valuemin="0" aria-valuemax="100">
+  <div class="prob-bar-fill " style="width: 9.55%"></div>
+</div>
+    
+  </div>
+
+  
+    
+
+  
+    <span class="edge-chip neutral">+0.0pp</span>
+  
+
+  
+</div>
+    
+      
+
+
+<div class="contender-card">
+  <span class="rank-chip ">5</span>
+
+  <span class="contender-name">Brazil</span>
+
+  <span class="contender-prob">9.3%</span>
+
+  <div class="contender-bar-wrap">
+    
+      
+<div class="prob-bar" role="progressbar" aria-valuenow="9" aria-valuemin="0" aria-valuemax="100">
+  <div class="prob-bar-fill " style="width: 9.35%"></div>
+</div>
+    
+  </div>
+
+  
+    
+
+  
+    <span class="edge-chip neutral">+0.0pp</span>
+  
+
+  
+</div>
+    
+  </div>
+  
+</section>
+
+
+<section>
+  <div class="section-header">
+    <h2 class="section-title">Next matches</h2>
+  </div>
+
+  
+  <div class="match-cards">
+    
+      
+
+<a href="/match/1.html" class="match-card" aria-label="Mexico vs South Africa">
+  <div class="match-card-meta">
+    <span>Jun 11 · 19:00 UTC</span>
+    <span class="stage-label">Group A</span>
+  </div>
+
+  <div class="match-card-teams">
+    <span class="match-team-name home">Mexico</span>
+    <span class="match-vs">vs</span>
+    <span class="match-team-name away">South Africa</span>
+  </div>
+
+  
+  <div class="match-card-probs">
+    <div class="timestamp small" style="padding: 0 0 0.625rem;">No forecast yet — click for details</div>
+  </div>
+  
+</a>
+    
+      
+
+<a href="/match/2.html" class="match-card" aria-label="South Korea vs Czechia">
+  <div class="match-card-meta">
+    <span>Jun 12 · 02:00 UTC</span>
+    <span class="stage-label">Group A</span>
+  </div>
+
+  <div class="match-card-teams">
+    <span class="match-team-name home">South Korea</span>
+    <span class="match-vs">vs</span>
+    <span class="match-team-name away">Czechia</span>
+  </div>
+
+  
+  <div class="match-card-probs">
+    <div class="timestamp small" style="padding: 0 0 0.625rem;">No forecast yet — click for details</div>
+  </div>
+  
+</a>
+    
+      
+
+<a href="/match/3.html" class="match-card" aria-label="Canada vs Bosnia-Herzegovina">
+  <div class="match-card-meta">
+    <span>Jun 12 · 19:00 UTC</span>
+    <span class="stage-label">Group B</span>
+  </div>
+
+  <div class="match-card-teams">
+    <span class="match-team-name home">Canada</span>
+    <span class="match-vs">vs</span>
+    <span class="match-team-name away">Bosnia-Herzegovina</span>
+  </div>
+
+  
+  <div class="match-card-probs">
+    <div class="timestamp small" style="padding: 0 0 0.625rem;">No forecast yet — click for details</div>
+  </div>
+  
+</a>
+    
+  </div>
+  
+</section>
+
+
+  </main>
+
+  <footer class="site-footer">
+    <span>World Cup 2026 forecast feed</span>
+    
+      &middot; <span class="timestamp">last updated 2026-05-27 08:21 UTC</span>
+    
+  </footer>
+
+  <script>
+    (function() {
+      var saved = localStorage.getItem('wc-theme');
+      if (saved) document.documentElement.setAttribute('data-theme', saved);
+    })();
+    function toggleTheme() {
+      var current = document.documentElement.getAttribute('data-theme');
+      var next = current === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('wc-theme', next);
+    }
+  </script>
+</body>
+</html>
